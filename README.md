@@ -5,15 +5,14 @@ Install the Expo CLI.
 ```Shell
 npm install -g expo-cli
 ```
-
-Now that you have the Expo CLI installed, init new expo project:
-```Shell
-expo init AwesomeProject
-```
-
 After the project is created, go to the project directory:
 ```Shell
 cd AwesomeProject
+```
+
+Now that you have the Expo CLI installed, install dependencies
+```Shell
+npm install
 ```
 
 To run React-Native application on a port run:
