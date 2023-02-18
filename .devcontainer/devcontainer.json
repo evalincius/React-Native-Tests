@@ -7,6 +7,5 @@
       "extensions": ["Orta.vscode-jest"]
     }
   },
-  "postCreateCommand": "bash -i ../scripts/install-dev-tools.sh"
-
+  "postCreateCommand": "bash scripts/install-dev-tools.sh"
 }
