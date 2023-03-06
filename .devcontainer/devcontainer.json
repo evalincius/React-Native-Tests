@@ -5,7 +5,15 @@
   "customizations": {
     "vscode": {
       "extensions": ["Orta.vscode-jest"]
+    },
+    "codespaces": {
+      "openFiles": [
+        "README.md"
+      ]
     }
   },
   "postCreateCommand": "bash scripts/install-dev-tools.sh"
+
+
+  
 }
