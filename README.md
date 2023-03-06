@@ -1,45 +1,36 @@
-In order to install React-Native framework, first create container with the Node.js stack. 
-Node.js has it's own package manager `npm` with which you will install the Expo CLI.
+# IMPORTANT!
+## Wait for VSCode to finish setting up dependencies
 
-Install the Expo CLI.
-```Shell
-npm install -g expo-cli
-```
-After the project is created, go to the project directory:
-```Shell
-cd AwesomeProject
-```
+1. Once VSCode opens for the first time you should briefly see the following in the terminal. 
+![](startupImages/1st_step.png)
 
-Now that you have the Expo CLI installed, install dependencies
-```Shell
-npm install
-```
+2. hen it should quickly change to following and will run for a few minutes.
+![](startupImages/2nd_step.png)
 
-To run React-Native application on a port run:
-```Shell
-RCT_METRO_PORT=3000 WEB_PORT=3001 expo start --web --tunnel
-```
+3. Once packages and dependencies required for the project are all installed, you will see the following for a brief moment:
+![](startupImages/3rd_step.png)
 
 
+4. Then it should change to this, indicating the Editor is ready to use:
+![](startupImages/4th_step.png)
 
 
-Install Tests
+## Launch Test Suite.
 
-```Shell
-npx expo install jest-expo jest
-```
+1. Open App Menu by clicking Burger Icon in Top Left corner:
+![](startupImages/5th_step.png)
 
-add following to `package.json`
-```json
-{		
-	"scripts": {
-		"test": "jest"
-	},
-	"jest": {
-		"preset": "jest-expo",
-		"transformIgnorePatterns": [
-		"node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
-		]
-	}
-}
-```
+2. Find and open Command Pallet:
+![](startupImages/6th_step.png)
+
+3. Once Command Pallete opened type in "jest" and select "Jest: Start All Runners":
+![](startupImages/7th_step.png)
+
+4. You should notice new Test View in Activity Bar on a left land side. Click on it:
+![](startupImages/8th_step.png)
+
+4. Once expanded, click "Run all tests" action:
+![](startupImages/9th_step.png)
+
+5. You shoul see the results of running tests similar to this:
+![](startupImages/10th_step.png)
